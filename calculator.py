@@ -1,5 +1,5 @@
 """
-calculator.py
+calculator2.py
 - Defines functions used to create a simple calculator
 
 One function per operation, in order.
@@ -18,6 +18,8 @@ def div(a,b):
     return b/a
 def log(a,b):
     if b<=0:
+        raise ValueError
+    if a<=1:
         raise ValueError
     return math.log(b,a)
 def exp(a,b):
