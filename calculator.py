@@ -11,9 +11,9 @@ def add(a, b):
     return a+b
 def subtract(a,b):
     return a-b
-def multiply(a,b):
+def mul(a,b):
     return a*b
-def divide(a,b):
+def div(a,b):
     if b==0:
         raise ZeroDivisionError
     return a/b
@@ -31,7 +31,7 @@ def log(a,b):
         raise ValueError
     return math.log(b,a)
 
-def exponent(a,b):
+def exp(a,b):
     return a**b
 
 def square_root(a):
