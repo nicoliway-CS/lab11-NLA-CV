@@ -14,15 +14,16 @@ def subtract(a,b):
 def mul(a,b):
     return a*b
 def div(a,b):
-    if b==0:
+    if a==0:
         raise ZeroDivisionError
-    return a/b
+    return b/a
 def logarithm(a,b):
-    if b<=0:
+    if a <= 0:
         raise ValueError
-    if a<=1:
+
+    if b<=1:
         raise ValueError
-    return math.log(b,a)
+    return math.log(a,b)
 
 def log(a,b):
     if b<=0:
